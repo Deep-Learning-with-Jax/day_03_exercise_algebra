@@ -38,7 +38,7 @@ def mypy(session):
         "--install-types",
         "--non-interactive",
         "--ignore-missing-imports",
-        "--strict",
+        "--no-strict-optional",
         "--no-warn-return-any",
         "--implicit-reexport",
         "--allow-untyped-calls",

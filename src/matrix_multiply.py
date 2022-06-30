@@ -1,4 +1,4 @@
-"""This module ships a function."""
+"""This module ships your matrix multiplication function."""
 import numpy as np
 
 

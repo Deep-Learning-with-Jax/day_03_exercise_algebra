@@ -1,4 +1,4 @@
-# Exercise matrix multiplication
+# Linear algebra exercise - matrix multiplication
 Implement matrix multiplication as discussed in the lecture. 
 We saw that multiplication of matrix 
 $ \mathbf{A} \in \mathbb{R}^{m,n } $

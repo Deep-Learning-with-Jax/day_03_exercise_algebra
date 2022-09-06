@@ -6,7 +6,7 @@ Use:
 nox -s test
 ```
 While coding, use `nox -s lint`, and `nox -s typing` to check your code.
-Autoformatting help is available via `nox -s` format.
+Autoformatting help is available via `nox -s format`.
 Feel free to read more about nox at https://nox.thea.codes/en/stable/ .
 
 

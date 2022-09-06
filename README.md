@@ -123,7 +123,7 @@ Generate a matrix A by setting m=2 and compute
 
 $$\mathbf{A}^{\dagger}\mathbf{b}.$$
 
-Plot the result. Compute the zero. When do the regression line and the x-Axis intersect?
+Plot the result. Compute the zero. When do the regression line and the x-axis intersect?
 
 #### Fitting a higher order Polynomial
 

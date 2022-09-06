@@ -107,7 +107,7 @@ with
 
 $$\mathbf{A} \in \mathbb{R}^{m,n}, \mathbf{U} \in \mathbb{R}^{m,m}, \mathbf{V} \in \mathbb{R}^{n,n}, \mathbf{F} \in \mathbb{R}^{m,m}, \Sigma^{\dagger} \in \mathbb{R}^{n,m} \text{ and } \mathbf{b} \in \mathbb{R}^{n,1}.$$
   
-Setting m=300 turns A into a square matrix. In this case the zero block in the sigma-matrix disappears.
+Setting m=300 turns A into a square matrix. In this case, the zero block in the sigma-matrix disappears.
 Plot the result for epsilon equal to 0.1, 1e-6, and 1e-12.
 
 
@@ -127,12 +127,12 @@ Plot the result. Compute the zero. When do the regression line and the x-Axis in
 
 #### Fitting a higher order Polynomial
 
-Re-using the code you wrote for the proof of concept task fit a polynomial of degree 20 to the data.
+Re-using the code you wrote for the proof of concept task, fit a polynomial of degree 20 to the data.
 Plot the result.
 
 
 #### Regularization
 Something happened around the year 2000. To investigate further, focus on the data from 2000 onward and
 filter the singular values.
-Matrix A is not square in this case. Consequently, a zero block must appear in your singular value matrix matrix. 
+Matrix A is not square in this case. Consequently, a zero block must appear in your singular value matrix. 
 Plot filtered eigen-polynomials using epsilon equal to 0.1, 1e-3, 1e-9.

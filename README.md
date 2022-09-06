@@ -111,9 +111,10 @@ Setting m=300 turns A into a square matrix. In this case the zero block in the s
 Plot the result for epsilon equal to 0.1, 1e-6, and 1e-12.
 
 
-### Part 2: Rhine water level analysis
-Now we are ready to deal with real data!
-The file `./data/pegel.tab` contains the Rhine water levels from the last 100 years as measured in Bonn.
+### Part 2: Real data analysis
+Now we are ready to deal with real data! Feel free to use your favorite time series data or work with the Rhine level data we provide.
+The file `./data/pegel.tab` contains the Rhine water levels measured in Bonn over the last 100 years. 
+Data source https://pegel.bonn.de .
 
 #### Regression
 The `src/pegel_bonn.py` file already contains code to pre-load the data for you.

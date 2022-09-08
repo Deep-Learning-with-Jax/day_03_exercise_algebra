@@ -2,3 +2,4 @@ nox
 numpy
 scipy
 matplotlib
+pandas

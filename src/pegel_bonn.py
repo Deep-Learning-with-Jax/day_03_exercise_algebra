@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas
 
-from regularization import set_up_point_matrix
 
 if __name__ == "__main__":
     rhein = pandas.read_csv("./data/pegel.tab", sep=" 	")

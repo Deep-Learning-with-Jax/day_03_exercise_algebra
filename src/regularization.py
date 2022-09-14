@@ -8,11 +8,11 @@ def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> tuple:
     """Set up a point matrix to fit a polynomial.
 
     The matrix should have to following form:
-    [x_1**0       x_1**1      ...  x_1**(degree-1)
-     x_2**0       x_2**1      ...  x_1**(degree-1)
-     x_3**0       x_3**1      ...  x_1**(degree-1)
+    [a_1**0       a_1**1      ...  a_1**(degree-1)
+     a_2**0       a_2**1      ...  a_1**(degree-1)
+     a_3**0       a_3**1      ...  a_1**(degree-1)
      ...          ...         ...  ...
-     x_points**0  x_points**1 ...  x_points**(degree-1)]
+     a_points**0  a_points**1 ...  a_points**(degree-1)]
 
     Args:
         points (int): The number of points to evaluate the polynomial on.
@@ -22,7 +22,7 @@ def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> tuple:
         tuple: The polynomial point matrix A.
     """
     mat_a = np.zeros((len(axis_x), degree))
-    # TODO: implement me.
+    # TODO implement me!
     return mat_a
 
 

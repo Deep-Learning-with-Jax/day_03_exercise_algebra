@@ -14,7 +14,7 @@ Feel free to read more about nox at https://nox.thea.codes/en/stable/ .
 Use `b = pandas.read_csv('./data/noisy_signal.tab')` to load a noisy signal.
 The first part will be concerned with modeling this signal using polynomials.
 
-#### Regression
+#### Regression:
 Linear regression is usually a good first step. Start by implementing the function
 `set_up_point_matrix` from the `src/regularization.py` module. 
 The function should produce polynomial-coordinate matrices $\mathbf{A}_m$ of the form:
@@ -22,11 +22,11 @@ The function should produce polynomial-coordinate matrices $\mathbf{A}_m$ of the
 $$
 \mathbf{A}_m = 
 \begin{pmatrix}
-          1       & x_1^1    & x_1^2  & \dots & x_1^m  \\\\ 
-          1       & x_2^1    & x_2^2  & \dots & x_2^m  \\\\
-          1       & x_3^1    & x_3^2  & \dots & x_3^m  \\\\
+          1       & a_1^1    & a_1^2  & \dots & a_1^m  \\\\ 
+          1       & a_2^1    & a_2^2  & \dots & a_2^m  \\\\
+          1       & a_3^1    & a_3^2  & \dots & a_3^m  \\\\
           \vdots  & \vdots   & \vdots  & \ddots & \vdots \\\\ 
-          1       & x_n^1    & x_n^2  & \dots & x_n^m  \\\\
+          1       & a_n^1    & a_n^2  & \dots & a_n^m  \\\\
    \end{pmatrix}
 $$
 
@@ -38,7 +38,7 @@ will produce the coefficients for a straight line. Evaluate your first-degree po
 Plot the result using `matplotlib.pyplot`'s `plot` function.
 
 
-#### Fitting a Polynomial to a function
+#### Fitting a Polynomial to a function:
 The straight line above is insufficient to model the data. Using your 
 implementation of `set_up_point_matrix` set n=300 and fit the polynomial
 by computing
@@ -54,7 +54,7 @@ What do you see?
 
 
 
-#### Regularization
+#### Regularization:
 Unfortunately, the fit is not ideal. The polynomial tracks the noise.
 The singular value decomposition (SVD) can help!
 Recall that the SVD turns a matrix
@@ -63,16 +63,7 @@ $$\mathbf{A} \in \mathbb{R}^{m,n}$$
 
 into the form:
 
-$$
-      \mathbf{A}
-      = \mathbf{U} \Sigma \mathbf{V}^T 
-      = \mathbf{U}
-      \begin{pmatrix}
-      \sigma_1 & & \\\\
-      & \ddots &  \\\\
-      & & \sigma_m \\\\ \hline 
-      & 0 & \\\\
-      \end{pmatrix} \mathbf{V}^T
+$$ \mathbf{A} = \mathbf{U} \Sigma \mathbf{V}^T 
 $$
 
 In the SVD-Form computing, the inverse is simple. Swap U and V  and replace every of the m singular values with it's inverse
@@ -87,7 +78,7 @@ $$f_i = \sigma_i^2 / (\sigma_i^2 + \epsilon)$$
 The idea is to compute a loop over i for all of the m singular values.
 Roughly speaking multiplication by f underscore i will filter a singular value when
 
-$$\sigma_i &lt; \epsilon .$$
+$$\sigma_i \lt \epsilon .$$
 
 Apply the regularization by computing:
 
@@ -116,22 +107,22 @@ Now we are ready to deal with real data! Feel free to use your favorite time ser
 The file `./data/pegel.tab` contains the Rhine water levels measured in Bonn over the last 100 years. 
 Data source https://pegel.bonn.de .
 
-#### Regression
+#### Regression:
 The `src/pegel_bonn.py` file already contains code to pre-load the data for you.
 Make the Rhine level measurements your new vector $\mathbf{b}$.
-Generate a matrix A by setting m=2 and compute 
+Generate a matrix A with m=2 using the timestamps for the data set compute 
 
 $$\mathbf{A}^{\dagger}\mathbf{b}.$$
 
 Plot the result. Compute the zero. When do the regression line and the x-axis intersect?
 
-#### Fitting a higher order Polynomial
+#### Fitting a higher order Polynomial:
 
 Re-using the code you wrote for the proof of concept task, fit a polynomial of degree 20 to the data.
 Plot the result.
 
 
-#### Regularization
+#### Regularization:
 Something happened around the year 2000. To investigate further, focus on the data from 2000 onward and
 filter the singular values.
 Matrix A is not square in this case. Consequently, a zero block must appear in your singular value matrix. 

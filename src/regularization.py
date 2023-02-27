@@ -14,8 +14,10 @@ def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> tuple:
      ...          ...         ...  ...
      a_points**0  a_points**1 ...  a_points**(degree-1)]
 
+    Where the entries in the matrix are from the axis_x vector.
+
     Args:
-        points (int): The number of points to evaluate the polynomial on.
+        axis_x (np.ndarray): The values of the time or x-Axis.
         degree (int): The degree of the polynomial.
 
     Returns:

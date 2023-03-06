@@ -9,15 +9,15 @@ def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> tuple:
 
     The matrix should have to following form:
     [a_1**0       a_1**1      ...  a_1**(degree-1)
-     a_2**0       a_2**1      ...  a_1**(degree-1)
-     a_3**0       a_3**1      ...  a_1**(degree-1)
+     a_2**0       a_2**1      ...  a_2**(degree-1)
+     a_3**0       a_3**1      ...  a_3**(degree-1)
      ...          ...         ...  ...
      a_points**0  a_points**1 ...  a_points**(degree-1)]
 
     Where the entries in the matrix are from the axis_x vector.
 
     Args:
-        axis_x (np.ndarray): The values of the time or x-Axis.
+        axis_x (np.ndarray): The values of the time or x-axis.
         degree (int): The degree of the polynomial.
 
     Returns:
@@ -34,3 +34,5 @@ if __name__ == "__main__":
 
     plt.plot(b_noise)
     plt.show()
+
+    # TODO put your code here!

@@ -103,7 +103,7 @@ Plot the result for epsilon equal to 0.1, 1e-6, and 1e-12.
 
 #### Model Complexity (Optional):
 Another solution to the overfitting problem is reducing the complexity of the model.
-To assess the quality of polynomial fit to the data, compute and plot the Mean Squared Error (Mean Squared Error measure how close the regression line is to data points) for every degree of polynomial upto 300.
+To assess the quality of polynomial fit to the data, compute and plot the Mean Squared Error (Mean Squared Error measure how close the regression line is to data points) for every degree of polynomial upto 20.
 
 From the plot, estimate the optimal degree of polynomial and fit the polynomial with this new degree and compare the regression.
 

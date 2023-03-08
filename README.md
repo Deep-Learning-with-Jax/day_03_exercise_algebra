@@ -22,11 +22,11 @@ The function should produce polynomial-coordinate matrices $\mathbf{A}_m$ of the
 $$
 \mathbf{A}_m = 
 \begin{pmatrix}
-          1       & a_1^1    & a_1^2  & \dots & a_1^m  \\\\ 
-          1       & a_2^1    & a_2^2  & \dots & a_2^m  \\\\
-          1       & a_3^1    & a_3^2  & \dots & a_3^m  \\\\
+          1       & a_1^1    & a_1^2  & \dots & a_1^{m-1}  \\\\ 
+          1       & a_2^1    & a_2^2  & \dots & a_2^{m-1}  \\\\
+          1       & a_3^1    & a_3^2  & \dots & a_3^{m-1}  \\\\
           \vdots  & \vdots   & \vdots  & \ddots & \vdots \\\\ 
-          1       & a_n^1    & a_n^2  & \dots & a_n^m  \\\\
+          1       & a_n^1    & a_n^2  & \dots & a_n^{m-1}  \\\\
    \end{pmatrix}
 $$
 

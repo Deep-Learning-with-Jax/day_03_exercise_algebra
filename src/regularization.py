@@ -29,10 +29,12 @@ def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> tuple:
 
 
 if __name__ == "__main__":
-    b_noise = pandas.read_csv("./data/noisy_signal.tab", header=None)
+    b_noise_p = pandas.read_csv("./data/noisy_signal.tab", header=None)
+    b_noise = np.asarray(b_noise_p)
+    
     x_axis = np.linspace(0, 1, num=len(b_noise))
 
-    plt.plot(b_noise)
+    plt.plot(x_axis, b_noise, ".", label="b_noise")
     plt.show()
 
     # TODO put your code here!

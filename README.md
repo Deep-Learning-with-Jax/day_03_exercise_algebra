@@ -22,11 +22,11 @@ The function should produce polynomial-coordinate matrices $\mathbf{A}_m$ of the
 $$
 \mathbf{A}_m = 
 \begin{pmatrix}
-          1       & a_1^1    & a_1^2  & \dots & a_1^m  \\\\ 
-          1       & a_2^1    & a_2^2  & \dots & a_2^m  \\\\
-          1       & a_3^1    & a_3^2  & \dots & a_3^m  \\\\
+          1       & a_1^1    & a_1^2  & \dots & a_1^{m-1}  \\\\ 
+          1       & a_2^1    & a_2^2  & \dots & a_2^{m-1}  \\\\
+          1       & a_3^1    & a_3^2  & \dots & a_3^{m-1}  \\\\
           \vdots  & \vdots   & \vdots  & \ddots & \vdots \\\\ 
-          1       & a_n^1    & a_n^2  & \dots & a_n^m  \\\\
+          1       & a_n^1    & a_n^2  & \dots & a_n^{m-1}  \\\\
    \end{pmatrix}
 $$
 
@@ -40,7 +40,7 @@ Plot the result using `matplotlib.pyplot`'s `plot` function.
 
 #### Fitting a Polynomial to a function:
 The straight line above is insufficient to model the data. Using your 
-implementation of `set_up_point_matrix` set n=300 and fit the polynomial
+implementation of `set_up_point_matrix` set m=300 (to set up a square matrix) and fit the polynomial
 by computing
 
 $$\mathbf{A}^{\dagger}\mathbf{b} = \mathbf{x}_{\text{fit}}.$$
@@ -101,16 +101,24 @@ $$\mathbf{A} \in \mathbb{R}^{m,n}, \mathbf{U} \in \mathbb{R}^{m,m}, \mathbf{V} \
 Setting m=300 turns A into a square matrix. In this case, the zero block in the sigma-matrix disappears.
 Plot the result for epsilon equal to 0.1, 1e-6, and 1e-12.
 
+#### Model Complexity (Optional):
+Another solution to the overfitting problem is reducing the complexity of the model.
+To assess the quality of polynomial fit to the data, compute and plot the Mean Squared Error (Mean Squared Error (MSE) measure how close the regression line is to data points) for every degree of polynomial upto 20.
+
+MSE can be calculated using the following equation, where N is the number of samples, $y_i$ is the original point and $\hat{y_i}$ is the predictied output.
+$$MSE=\frac{1}{N} \sum_{i=1}^{N} (y_i-\hat{y_i})$$
+
+From the plot, estimate the optimal degree of polynomial and fit the polynomial with this new degree and compare the regression.
 
 ### Part 2: Real data analysis
 Now we are ready to deal with real data! Feel free to use your favorite time series data or work with the Rhine level data we provide.
 The file `./data/pegel.tab` contains the Rhine water levels measured in Bonn over the last 100 years. 
-Data source https://pegel.bonn.de .
+Data source: https://pegel.bonn.de.
 
 #### Regression:
 The `src/pegel_bonn.py` file already contains code to pre-load the data for you.
 Make the Rhine level measurements your new vector $\mathbf{b}$.
-Generate a matrix A with m=2 using the timestamps for the data set compute 
+Generate a matrix A with m=2 using the timestamps for the data set and compute 
 
 $$\mathbf{A}^{\dagger}\mathbf{b}.$$
 

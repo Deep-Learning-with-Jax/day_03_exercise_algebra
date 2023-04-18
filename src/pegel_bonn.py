@@ -25,7 +25,8 @@ if __name__ == "__main__":
     # levels = levels[:-30_000:4]
     # datetime_list = datetime_list[:-30_000:4]
 
-    datetime_stamps = [dt.timestamp() for dt in datetime_list]
+    datetime_stamps = np.array([dt.timestamp() for dt in datetime_list])
+    levels = np.array(levels)
 
     levels = levels[::-1]
     datetime_stamps = datetime_stamps[::-1]

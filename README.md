@@ -106,7 +106,7 @@ Another solution to the overfitting problem is reducing the complexity of the mo
 To assess the quality of polynomial fit to the data, compute and plot the Mean Squared Error (Mean Squared Error (MSE) measure how close the regression line is to data points) for every degree of polynomial upto 20.
 
 MSE can be calculated using the following equation, where N is the number of samples, $y_i$ is the original point and $\hat{y_i}$ is the predictied output.
-$$MSE=\frac{1}{N} \sum_{i=1}^{N} (y_i-\hat{y_i})$$
+$$MSE=\frac{1}{N} \sum_{i=1}^{N} (y_i-\hat{y_i})^2$$
 
 From the plot, estimate the optimal degree of polynomial and fit the polynomial with this new degree and compare the regression.
 

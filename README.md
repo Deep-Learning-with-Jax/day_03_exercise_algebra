@@ -96,7 +96,7 @@ $$
 
 with
 
-$$\mathbf{A} \in \mathbb{R}^{m,n}, \mathbf{U} \in \mathbb{R}^{m,m}, \mathbf{V} \in \mathbb{R}^{n,n}, \mathbf{F} \in \mathbb{R}^{m,m}, \Sigma^{\dagger} \in \mathbb{R}^{n,m} \text{ and } \mathbf{b} \in \mathbb{R}^{n,1}.$$
+$$\mathbf{V} \in \mathbb{R}^{n,n}, \mathbf{F} \in \mathbb{R}^{n,n}, \Sigma^{\dagger} \in \mathbb{R}^{n,m}, \mathbf{U} \in \mathbb{R}^{m,m} \text{ and } \mathbf{b} \in \mathbb{R}^{n,1}.$$
   
 Setting m=300 turns A into a square matrix. In this case, the zero block in the sigma-matrix disappears.
 Plot the result for epsilon equal to 0.1, 1e-6, and 1e-12.

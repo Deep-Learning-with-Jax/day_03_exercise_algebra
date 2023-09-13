@@ -118,7 +118,10 @@ Data source: https://pegel.bonn.de.
 #### Regression:
 The `src/pegel_bonn.py` file already contains code to pre-load the data for you.
 Make the Rhine level measurements your new vector $\mathbf{b}$.
-Generate a matrix A with m=2 using the timestamps for the data set and compute 
+
+Study the scaling of the timestamp values. Is the range suitable for stable numerical computation?
+
+Generate a matrix A with n=2 using the timestamps for the data set and compute 
 
 $$\mathbf{A}^{\dagger}\mathbf{b}.$$
 

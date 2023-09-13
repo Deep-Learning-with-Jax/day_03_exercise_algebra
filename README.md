@@ -20,7 +20,7 @@ Linear regression is usually a good first step. Start by implementing the functi
 The function should produce polynomial-coordinate matrices $\mathbf{A}_n$ of the form:
 
 $$
-\mathbf{A}_m = 
+\mathbf{A}_n = 
 \begin{pmatrix}
           1       & a_1^1    & a_1^2  & \dots & a_1^{n-1}  \\\\ 
           1       & a_2^1    & a_2^2  & \dots & a_2^{n-1}  \\\\

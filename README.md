@@ -108,7 +108,7 @@ To assess the quality of polynomial fit to the data, compute and plot the Mean S
 MSE can be calculated using the following equation, where N is the number of samples, $y_i$ is the original point and $\hat{y_i}$ is the predictied output.
 $$MSE=\frac{1}{N} \sum_{i=1}^{N} (y_i-\hat{y_i})^2$$
 
-Are the degree of the polynomial and the MSE linked?.
+Are the degree of the polynomial and the MSE linked?
 
 ### Part 2: Real data analysis
 Now we are ready to deal with real data! Feel free to use your favorite time series data or work with the Rhine level data we provide.

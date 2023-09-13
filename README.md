@@ -40,7 +40,7 @@ Plot the result using `matplotlib.pyplot`'s `plot` function.
 
 #### Fitting a Polynomial to a function:
 The straight line above is insufficient to model the data. Using your 
-implementation of `set_up_point_matrix`, set m=300 (to set up a square matrix) and fit the polynomial
+implementation of `set_up_point_matrix`, set n=300 (to set up a square matrix) and fit the polynomial
 by computing
 
 $$\mathbf{A}^{\dagger}\mathbf{b} = \mathbf{x}_{\text{fit}}.$$

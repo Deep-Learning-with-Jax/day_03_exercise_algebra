@@ -4,7 +4,7 @@ import numpy as np
 import pandas
 
 
-def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> tuple:
+def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> np.ndarray:
     """Set up a point matrix to fit a polynomial.
 
     The matrix should have to following form:

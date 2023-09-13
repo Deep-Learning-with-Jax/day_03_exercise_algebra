@@ -87,7 +87,7 @@ $$
     \mathbf{x}_r= \mathbf{V} \mathbf{F} \begin{pmatrix}
       \sigma_1^{-1} & & & \\\\
       &  \ddots & \\\\
-      &  & \sigma_m^{-1} \\\\ \hline
+      &  & \sigma_n^{-1} \\\\ \hline
       & 0 &
     \end{pmatrix}
     \mathbf{U}^T \mathbf{b}

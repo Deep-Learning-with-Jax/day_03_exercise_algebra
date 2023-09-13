@@ -119,8 +119,6 @@ Data source: https://pegel.bonn.de.
 The `src/pegel_bonn.py` file already contains code to pre-load the data for you.
 Make the Rhine level measurements your new vector $\mathbf{b}$.
 
-Study the scaling of the timestamp values. Is the range suitable for stable numerical computation?
-
 Generate a matrix A with n=2 using the timestamps for the data set and compute 
 
 $$\mathbf{A}^{\dagger}\mathbf{b}.$$
@@ -130,8 +128,8 @@ Plot the result. Compute the zero. When do the regression line and the x-axis in
 #### Fitting a higher order Polynomial:
 
 Re-using the code you wrote for the proof of concept task, fit a polynomial of degree 20 to the data.
+Study the scaling of the timestamp values. Is the range suitable for stable numerical computations?
 Plot the result.
-
 
 #### Regularization:
 Something happened around the year 2000. To investigate further, focus on the data from 2000 onward and

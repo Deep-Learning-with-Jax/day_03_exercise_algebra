@@ -12,7 +12,7 @@ Feel free to read more about nox at https://nox.thea.codes/en/stable/ .
 
 ### Part 1: Proof of concept
 Use `b = pandas.read_csv('./data/noisy_signal.tab')` to load a noisy signal.
-The first part will be concerned with modeling this signal using polynomials.
+The first part will be concerned with modelling this signal using polynomials.
 
 #### Regression:
 Linear regression is usually a good first step. Start by implementing the function
@@ -40,7 +40,7 @@ Plot the result using `matplotlib.pyplot`'s `plot` function.
 
 #### Fitting a Polynomial to a function:
 The straight line above is insufficient to model the data. Using your 
-implementation of `set_up_point_matrix` set m=300 (to set up a square matrix) and fit the polynomial
+implementation of `set_up_point_matrix`, set m=300 (to set up a square matrix) and fit the polynomial
 by computing
 
 $$\mathbf{A}^{\dagger}\mathbf{b} = \mathbf{x}_{\text{fit}}.$$
@@ -76,7 +76,7 @@ Compute a diagonal for a filter matrix by evaluating:
 $$f_i = \sigma_i^2 / (\sigma_i^2 + \epsilon)$$
 
 The idea is to compute a loop over i for all of the m singular values.
-Roughly speaking multiplication by f underscore i will filter a singular value when
+Roughly speaking, multiplication by f underscore i will filter a singular value when
 
 $$\sigma_i \lt \epsilon .$$
 
@@ -103,12 +103,12 @@ Plot the result for epsilon equal to 0.1, 1e-6, and 1e-12.
 
 #### Model Complexity (Optional):
 Another solution to the overfitting problem is reducing the complexity of the model.
-To assess the quality of polynomial fit to the data, compute and plot the Mean Squared Error (Mean Squared Error (MSE) measure how close the regression line is to data points) for every degree of polynomial upto 20.
+To assess the quality of polynomial fit to the data, compute and plot the Mean Squared Error (Mean Squared Error (MSE) measure how close the regression line is to data points) for every degree of polynomial up to 20.
 
 MSE can be calculated using the following equation, where N is the number of samples, $y_i$ is the original point and $\hat{y_i}$ is the predictied output.
 $$MSE=\frac{1}{N} \sum_{i=1}^{N} (y_i-\hat{y_i})^2$$
 
-From the plot, estimate the optimal degree of polynomial and fit the polynomial with this new degree and compare the regression.
+Are the degree of the polynomial and the MSE linked?.
 
 ### Part 2: Real data analysis
 Now we are ready to deal with real data! Feel free to use your favorite time series data or work with the Rhine level data we provide.

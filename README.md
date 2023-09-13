@@ -17,22 +17,22 @@ The first part will be concerned with modeling this signal using polynomials.
 #### Regression:
 Linear regression is usually a good first step. Start by implementing the function
 `set_up_point_matrix` from the `src/regularization.py` module. 
-The function should produce polynomial-coordinate matrices $\mathbf{A}_m$ of the form:
+The function should produce polynomial-coordinate matrices $\mathbf{A}_n$ of the form:
 
 $$
 \mathbf{A}_m = 
 \begin{pmatrix}
-          1       & a_1^1    & a_1^2  & \dots & a_1^{m-1}  \\\\ 
-          1       & a_2^1    & a_2^2  & \dots & a_2^{m-1}  \\\\
-          1       & a_3^1    & a_3^2  & \dots & a_3^{m-1}  \\\\
+          1       & a_1^1    & a_1^2  & \dots & a_1^{n-1}  \\\\ 
+          1       & a_2^1    & a_2^2  & \dots & a_2^{n-1}  \\\\
+          1       & a_3^1    & a_3^2  & \dots & a_3^{n-1}  \\\\
           \vdots  & \vdots   & \vdots  & \ddots & \vdots \\\\ 
-          1       & a_n^1    & a_n^2  & \dots & a_n^{m-1}  \\\\
+          1       & a_m^1    & a_m^2  & \dots & a_m^{n-1}  \\\\
    \end{pmatrix}
 $$
 
-With m=2,
+With n=2,
 
-$$\mathbf{A}_m^{\dagger}\mathbf{b} = \mathbf{x}$$
+$$\mathbf{A}_n^{\dagger}\mathbf{b} = \mathbf{x}$$
 
 will produce the coefficients for a straight line. Evaluate your first-degree polynomial via ax+b.
 Plot the result using `matplotlib.pyplot`'s `plot` function.

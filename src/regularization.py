@@ -21,7 +21,7 @@ def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> np.ndarray:
         degree (int): The degree of the polynomial.
 
     Returns:
-        tuple: The polynomial point matrix A.
+        np.ndarray: The polynomial point matrix A.
     """
     mat_a = np.zeros((len(axis_x), degree))
     # TODO implement me!

@@ -32,7 +32,7 @@ $$
 
 With n=2,
 
-$$\mathbf{A}_n^{\dagger}\mathbf{b} = \mathbf{x}$$
+$$\mathbf{A}_2^{\dagger}\mathbf{b} = \mathbf{x}$$
 
 will produce the coefficients for a straight line. Evaluate your first-degree polynomial via ax+b.
 Plot the result using `matplotlib.pyplot`'s `plot` function.

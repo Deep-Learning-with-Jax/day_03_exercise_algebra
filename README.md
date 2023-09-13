@@ -132,7 +132,6 @@ Study the scaling of the timestamp values. Is the range suitable for stable nume
 Plot the result.
 
 #### Regularization:
-Something happened around the year 2000. To investigate further, focus on the data from 2000 onward and
-filter the singular values.
+Focus on the data from 2000 onward and filter the singular values.
 Matrix A is not square in this case. Consequently, a zero block must appear in your singular value matrix. 
 Plot filtered eigen-polynomials using epsilon equal to 0.1, 1e-3, 1e-9.

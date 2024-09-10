@@ -77,7 +77,7 @@ This results in the matrix
       &  \ddots & \\\\
       &  & \sigma_m^{-1} \\\\ \hline
       & 0 &
-\end{pmatrix}
+\end{pmatrix}^T
 ```
 
 A solution to the overfitting problem is to filter the singular values.

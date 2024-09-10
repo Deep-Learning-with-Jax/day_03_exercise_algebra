@@ -75,7 +75,7 @@ This results in the matrix
 \Sigma^\dagger = \begin{pmatrix}
       \sigma_1^{-1} & & & \\\\
       &  \ddots & \\\\
-      &  & \sigma_m^{-1} \\\\ \hline
+      &  & \sigma_n^{-1} \\\\ \hline
       & 0 &
 \end{pmatrix}^T
 ```

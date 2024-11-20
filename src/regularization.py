@@ -24,13 +24,13 @@ def set_up_point_matrix(axis_x: np.ndarray, degree: int) -> np.ndarray:
         np.ndarray: The polynomial point matrix A.
     """
     mat_a = np.zeros((len(axis_x), degree))
-    # TODO implement me!
+    # TODO 1.1.1 implement me!
     return mat_a
 
 
 if __name__ == "__main__":
     b_noise_p = pandas.read_csv("./data/noisy_signal.tab", header=None)
-    b_noise = np.asarray(b_noise_p)
+    b_noise = np.asarray(b_noise_p) # This is the artificial data we work with
 
     x_axis = np.linspace(0, 1, num=len(b_noise))
 
@@ -38,3 +38,22 @@ if __name__ == "__main__":
     plt.show()
 
     # TODO put your code here!
+
+    # 1.1 Regression
+
+    # 1.1.2 Create the point-matrix A for n=2
+
+    # 1.1.3 Calculate the estimated coefficients for the polynomial
+    #       You can use np.linalg.pinv to compute the Pseudo-Inverse
+
+    # 1.1.4 Plot the original data as well as the estimated polynomial by evaluating it.
+
+    # 1.2 Higher order Polynomial
+
+    # 1.2.1 Create the point-matrix A for n=300
+
+    # 1.2.2 Calculate the estimated coefficients for the polynomial
+
+    # 1.2.3 Plot the original data as well as the estimated polynomial by evaluating it.
+
+    # 1.3 Regularization

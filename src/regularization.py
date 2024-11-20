@@ -37,7 +37,7 @@ if __name__ == "__main__":
     plt.plot(x_axis, b_noise, ".", label="b_noise")
     plt.show()
 
-    # TODO put your code here!
+    # TODO put your code for Part 1 here!
 
     # 1.1 Regression
 
@@ -48,6 +48,8 @@ if __name__ == "__main__":
 
     # 1.1.4 Plot the original data as well as the estimated polynomial by evaluating it.
 
+
+
     # 1.2 Higher order Polynomial
 
     # 1.2.1 Create the point-matrix A for n=300
@@ -56,4 +58,35 @@ if __name__ == "__main__":
 
     # 1.2.3 Plot the original data as well as the estimated polynomial by evaluating it.
 
+
+
     # 1.3 Regularization
+
+    # 1.3.1 Compute the SVD of A
+
+    # 1.3.2 Compute the filter matrix
+
+    # 1.3.3 Estimate the coefficients by applying regularization
+
+    # 1.3.4 Plot your results
+
+    #----------------------------------------------------------------------------------------#
+    # Optional Task 1.4 Model Complexity
+
+    # For every degree from 1 to 20:
+
+    # 1.4.1 Set up the point matrix for the current degree
+
+    # 1.4.2 Estimate the coefficients for the polynomial via the pseudoinverse
+
+    # 1.4.3 Compute the predictions by evaluating the estimated polynomial at the x-values
+
+    # 1.4.4 Compute the MSE between the predictions and the original b-values
+
+    # 1.4.5 Plot the MSE-error against the degree  
+
+    # 1.4.6 Take a look at the graph with all 20 MSE's and see if there is a link between degree and MSE
+    #       Estimate the optimal degree of polynomial and fit the polynomial with this new degree
+    #             --> so perform the usual steps but only once with the optimal degree 
+    
+    #       Plot the result

@@ -118,7 +118,7 @@ Are the degree of the polynomial and the MSE linked?
 ### Part 2: Real data analysis
 Now we are ready to deal with real data! Feel free to use your favorite time series data or work with the Rhine level data we provide.
 The file `./data/pegel.tab` contains the Rhine water levels measured in Bonn over the last 100 years. 
-Data source: https://pegel.bonn.de.
+Data sourced from https://pegel.bonn.de.
 
 #### Regression:
 The `src/pegel_bonn.py` file already contains code to pre-load the data for you.
